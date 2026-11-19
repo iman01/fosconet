@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fosconet"
+version = "2.0.0"
+description = "Completion of trunk-occluded geometry in single forest LiDAR scans for ground-robot planning"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Iman Esfandiyar" }, { name = "Dominik Belter" }]
+requires-python = ">=3.9"
+keywords = ["lidar", "scene completion", "forest", "robotics", "occupancy", "traversability"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "torch>=2.0",
+    "rosbags>=0.9",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+fosconet = "fosconet.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fosconet*"]
+
+[tool.setuptools.package-data]
+"fosconet" = ["weights/*.pt", "weights/LICENSE"]
+"fosconet.third_party.digiforests" = ["LICENSE"]

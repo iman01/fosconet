@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, the models or the dataset, please cite the conference paper below and the journal article (under review; its reference will be added here)."
+title: "FOSCo-Net: completion of trunk-occluded geometry in single forest LiDAR scans"
+type: software
+version: 2.0.0
+license: MIT
+authors:
+  - family-names: Esfandiyar
+    given-names: Iman
+    orcid: "https://orcid.org/0000-0002-3360-7728"
+    affiliation: "Poznań University of Technology; Łukasiewicz Research Network - Poznań Institute of Technology"
+  - family-names: Belter
+    given-names: Dominik
+    orcid: "https://orcid.org/0000-0003-3002-9747"
+    affiliation: "Poznań University of Technology"
+keywords: [lidar, scene completion, forest robotics, traversability mapping, self-supervised learning]
+preferred-citation:
+  type: article
+  title: "FOSCo-Net: Ego-centric Voxel Completion for Forest LiDAR Occlusions"
+  authors:
+    - family-names: Esfandiyar
+      given-names: Iman
+    - family-names: Belter
+      given-names: Dominik
+  year: 2026
+  doi: "10.48550/arXiv.2611.06588"
+  identifiers:
+    - type: other
+      value: "arXiv:2611.06588"
+references:
+  - type: dataset
+    title: "Forest walks 2026-08-12: handheld LiDAR, IMU and GNSS recordings of a temperate forest, with a joint trajectory and map"
+    authors:
+      - family-names: Esfandiyar
+        given-names: Iman
+      - family-names: Belter
+        given-names: Dominik
+    year: 2026
+    doi: "10.5281/zenodo.24378952"

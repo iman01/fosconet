@@ -1,0 +1,7 @@
+FOSCo-Net model weights (fosconet2_polar.pt, fosconet2_cart.pt, fosconet1_polar.pt, fosconet1_cart.pt)
+
+Copyright (c) 2026 Iman Esfandiyar, Dominik Belter
+
+The weights are released under the Creative Commons Attribution-NonCommercial 4.0 International licence
+(CC BY-NC 4.0, https://creativecommons.org/licenses/by-nc/4.0/). They were trained on scans of public forest
+LiDAR datasets, some of which restrict commercial use; please also respect the licences of those datasets.
